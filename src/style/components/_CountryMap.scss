@@ -1,0 +1,8 @@
+.CountryMap {
+  border: 1px solid $color-gray-light;
+  
+  .leaflet-container {
+    height: 400px;
+    width: 100%;
+  }
+}

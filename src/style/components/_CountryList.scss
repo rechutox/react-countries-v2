@@ -1,0 +1,40 @@
+.CountryList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .Message {
+    margin-top: $padding-default;
+  }
+}
+
+.CountryList__input {
+  border-radius: 3px;
+  border: 1px solid $color-gray-light;
+  padding: 5px 10px;
+}
+
+.CountryList__FilteredList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border: 1px solid $color-gray-light;
+  margin-top: $padding-default;
+}
+
+.CountryList__ListItem {
+  background-color: white;
+  border: 0;
+  padding: 7px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-gray-light;
+  }
+
+  &.CountryList__ListItem--selected {
+    background-color: $color-gray-dark;
+    color: white;
+  }
+}

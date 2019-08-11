@@ -1,0 +1,49 @@
+.CountryView {
+  height: 100%;
+}
+
+.CountryView__View {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-right: $padding-default;
+  overflow-y: scroll;
+
+  h1 {
+    text-align: center;
+    border: 1px solid $color-gray-light;
+    padding: $padding-default;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  }
+
+  figure {
+    padding: $padding-default;
+    margin: 0;
+    background: $color-gray-light;
+    border-radius: 5px 5px 0 0;
+    height: 120px;
+    height: 20vh;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3));
+    }
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  table,
+  table th,
+  table td {
+    border: 1px solid $color-gray-light;
+  }
+}

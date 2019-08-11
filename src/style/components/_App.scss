@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  color: $color-gray-dark;
+}
+
+.App__left {
+  flex: 3;
+  padding: $padding-default;
+}
+
+.App__right {
+  flex: 8;
+  padding: $padding-default;
+}

@@ -1,0 +1,24 @@
+$message-color-info-bg: rgb(196, 220, 255);
+$message-color-info-fg: rgb(31, 69, 128);
+
+$message-color-error-bg: rgb(255, 196, 196);
+$message-color-error-fg: rgb(128, 31, 31);
+
+.Message {
+  background-color: $color-gray-light;
+  color: $color-gray-dark;
+  padding: $padding-default;
+  border-left: 4px solid $color-gray-dark;
+}
+
+.Message.Message--info {
+  background-color: $message-color-info-bg;
+  color: $message-color-info-fg;
+  border-left-color: $message-color-info-fg;
+}
+
+.Message.Message--error {
+  background-color: $message-color-error-bg;
+  color: $message-color-error-fg;
+  border-left-color: $message-color-error-fg;
+}
